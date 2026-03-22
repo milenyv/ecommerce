@@ -66,3 +66,8 @@ Front-end Developer 💻✨
 📄 Licença
 
 Este projeto é de uso livre para fins de estudo.
+
+login: teste@email.com 
+senha: 123456
+<img width="1495" height="861" alt="image" src="https://github.com/user-attachments/assets/7c01a507-4360-4fce-938f-10fef9a9d3ec" />
+
