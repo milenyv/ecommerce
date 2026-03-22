@@ -1,11 +1,9 @@
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
-  background: #f8fafc;
-  color: #0f172a;
+  background: #0b1120;
+  color: #e2e8f0;
   margin: 0;
 }
-
 
 .cart-container {
   display: grid;
@@ -16,29 +14,26 @@ body {
   margin: auto;
 }
 
-
 .cart-items {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-
 .cart-card {
   display: flex;
   gap: 20px;
   padding: 18px;
   border-radius: 16px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: #111827;
+  border: 1px solid #1f2937;
   transition: 0.2s;
 }
 
 .cart-card:hover {
-  border-color: #cbd5f5;
+  border-color: #334155;
   transform: translateY(-2px);
 }
-
 
 .cart-img {
   width: 95px;
@@ -46,7 +41,6 @@ body {
   border-radius: 12px;
   object-fit: cover;
 }
-
 
 .cart-info {
   flex: 1;
@@ -58,8 +52,8 @@ body {
 .cart-info h3 {
   margin: 0;
   font-size: 16px;
+  color: #f1f5f9;
 }
-
 
 .cart-controls {
   display: flex;
@@ -68,26 +62,25 @@ body {
   margin-top: 8px;
 }
 
-
 .btn-qtd {
   width: 32px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #334155;
   border-radius: 8px;
   text-decoration: none;
-  color: #0f172a;
+  color: #e2e8f0;
   font-size: 14px;
   transition: 0.2s;
 }
 
 .btn-qtd:hover {
-  background: #0f172a;
+  background: #1d4ed8;
+  border-color: #1d4ed8;
   color: white;
 }
-
 
 .qtd {
   font-weight: 600;
@@ -95,25 +88,22 @@ body {
   text-align: center;
 }
 
-
 .subtotal {
   font-weight: 600;
-  color: #16a34a;
+  color: #22c55e;
   margin-top: 10px;
 }
 
-
 .remove {
-  color: #ef4444;
+  color: #f87171;
   font-size: 13px;
   text-decoration: none;
   margin-top: 5px;
 }
 
-
 .cart-summary {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: #111827;
+  border: 1px solid #1f2937;
   border-radius: 16px;
   padding: 25px;
   height: fit-content;
@@ -121,16 +111,15 @@ body {
   top: 30px;
 }
 
-
 .cart-summary h2 {
   margin-top: 0;
   font-size: 18px;
 }
 
-
 .cart-summary h3 {
   font-size: 28px;
   margin: 10px 0;
+  color: #60a5fa;
 }
 
 .cart-summary button {
@@ -138,7 +127,7 @@ body {
   padding: 14px;
   border-radius: 10px;
   border: none;
-  background: #0f172a;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -146,14 +135,14 @@ body {
 }
 
 .cart-summary button:hover {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .back {
   display: block;
   margin-top: 15px;
   text-align: center;
-  color: #64748b;
+  color: #94a3b8;
   text-decoration: none;
   font-size: 14px;
 }
