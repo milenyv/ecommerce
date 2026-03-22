@@ -1,27 +1,40 @@
+<link rel="stylesheet" href="css/login.css">
 <?php
 session_start();
 include("config/db.php");
+
+$erro = "";
 
 if ($_POST) {
   $email = $_POST['email'];
   $senha = $_POST['senha'];
 
-  $sql = "SELECT * FROM usuarios WHERE email='$email' AND senha='$senha'";
-  $result = $conn->query($sql);
+  $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email=? AND senha=?");
+  $stmt->bind_param("ss", $email, $senha);
+  $stmt->execute();
+  $result = $stmt->get_result();
 
   if ($result->num_rows > 0) {
     $_SESSION['user'] = $email;
     header("Location: index.php");
+    exit;
   } else {
-    echo "❌ Login inválido";
+    $erro = "Email ou senha inválidos";
   }
 }
 ?>
 
-<h2>Login</h2>
+<div class="login-container">
+  <form method="POST" class="login-card">
+    <h2>Login</h2>
 
-<form method="POST">
-  <input type="email" name="email" placeholder="Email" required><br><br>
-  <input type="password" name="senha" placeholder="Senha" required><br><br>
-  <button>Entrar</button>
-</form>
+    <?php if($erro): ?>
+      <p class="erro"><?= $erro ?></p>
+    <?php endif; ?>
+
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+
+    <button type="submit">Entrar</button>
+  </form>
+</div>
