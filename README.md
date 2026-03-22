@@ -44,6 +44,3 @@ ecommerce/
 │
 └── assets/
 ```
-
-
-3. Inicie o **Apache**
