@@ -6,14 +6,14 @@ Projeto de loja virtual completa desenvolvido com **PHP, MySQL, HTML, CSS e Java
 
 ## 🚀 Funcionalidades
 
-* 🛍️ Listagem de produtos dinâmica (via banco de dados)
-* 🛒 Carrinho de compras com sessão
-* 🔢 Controle de quantidade de itens
-* ❌ Remoção de produtos do carrinho
-* 🔐 Sistema de login de usuário
-* 💳 Finalização de compra
-* 📦 Registro de pedidos no banco de dados
-* 🎨 Interface moderna e responsiva
+📦 Listagem de produtos
+🛒 Carrinho de compras (com sessão)
+➕ Aumentar / diminuir quantidade
+❌ Remover produtos
+💳 Finalização de compra
+🔐 Login de usuário
+📊 Registro de pedidos no banco
+🎨 Interface moderna (dark mode)
 
 ---
 
@@ -23,7 +23,6 @@ Projeto de loja virtual completa desenvolvido com **PHP, MySQL, HTML, CSS e Java
 * MySQL
 * HTML5
 * CSS3
-* JavaScript
 
 ---
 
@@ -44,3 +43,26 @@ ecommerce/
 │
 └── assets/
 ```
+
+🎨 Interface
+Tema escuro moderno
+Layout responsivo
+Carrinho lateral interativo
+Cards com animação
+Checkout estilizado
+
+📌 Melhorias futuras
+🔐 Criptografia de senha (password_hash)
+👤 Cadastro de usuário
+📦 Histórico de pedidos
+💳 Integração com pagamento (Mercado Pago / Stripe)
+❤️ Favoritos
+
+👩‍💻 Autora
+
+Desenvolvido por Mileny Velho
+Front-end Developer 💻✨
+
+📄 Licença
+
+Este projeto é de uso livre para fins de estudo.
