@@ -26,7 +26,29 @@ if (isset($_GET['remove'])) {
   unset($_SESSION['cart'][$id]);
   header("Location: carrinho.php");
 }
+
+
+if (isset($_GET['increase'])) {
+  $id = $_GET['increase'];
+  $_SESSION['cart'][$id]++;
+  header("Location: carrinho.php");
+}
+
+
+if (isset($_GET['decrease'])) {
+  $id = $_GET['decrease'];
+
+  if ($_SESSION['cart'][$id] > 1) {
+    $_SESSION['cart'][$id]--;
+  } else {
+    unset($_SESSION['cart'][$id]);
+  }
+
+  header("Location: carrinho.php");
+}
 ?>
+
+
 
 <h1>🛒 Seu Carrinho</h1>
 
