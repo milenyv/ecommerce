@@ -8,11 +8,16 @@ $result = $conn->query($sql);
 <link rel="stylesheet" href="css/style.css">
 
 <div class="topbar">
-    <h2>🛒 Loja</h2>
-    <div>
-        <button onclick="toggleCart()">Carrinho</button>
-        <a href="login.php">Login</a>
+  <div class="topbar-content">
+    
+    <div class="logo">🛒 Loja</div>
+
+    <div class="actions">
+      <button class="btn-cart" onclick="toggleCart()">Carrinho</button>
+      <a href="login.php" class="login">Login</a>
     </div>
+
+  </div>
 </div>
 
 <h1>Perfumes</h1>
